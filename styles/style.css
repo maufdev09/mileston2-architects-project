@@ -23,6 +23,35 @@ body{
     padding: 0.938em;
 }
 
+/* Nav bar */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(255, 144, 14, 0.1);
+    padding: 30px;
+    align-items: center;
+}
+.headear-tittle{
+    font-weight: 700;
+    font-size: 45px;
+}
+ ul{
+    display: flex;
+    gap: 10px;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+ul li a{
+    text-decoration: none;
+    color: #424242;
+}
+
 
 /* .hero-section */
 .hero-section{
@@ -248,13 +277,14 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-text-align: center;
 }
 
 .sponser-info{
 width: 60%;
 margin-bottom: 30px;
+text-align: center;
 }
+
 .sponser-info h3{
     font-weight: 700;
     font-size: 45px;
@@ -267,27 +297,78 @@ margin-bottom: 30px;
     margin-bottom: 20px;
 
 }
-
-ponsers-imgs
-.sponser-img1{
-    background-image: url(../images/sponsors/amazon.png);
-
+.sponsers-imgs{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    
+   
 }
-.sponser-img2{
-    background-image: url(../images/sponsors/figma.png);
+.sponser-img{
+width: 100%;
+}
+.sponser-img img{
+width: 80%;
+}
+/* footer section */
+.footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-box{
+    background: #FFF4E7;
+    border-radius: 8px;
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     
 }
-.sponser-img3{
-    background-image: url(../images/sponsors/google.png);
+.footer-box p{
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+
+    
+
 }
-.sponser-img4{
-    background-image: url(../images/sponsors/spotify.png);
-}
-.sponser-img5{
-    background-image: url(../images/sponsors/telerama.png);
+
+.about{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 100px;
 }
 
 
+.about img{
+    width: 200px;
+}
+
+.about-tittle{
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+.about-number{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sub-tittle{
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+
+
+
+}
 
 
     
@@ -318,9 +399,28 @@ ponsers-imgs
 
 /* for mobile */
 @media only screen and (max-width: 576px) {
+    
     .common-btn {
         padding: 10px;
     }
+/* Nav bar */
+header{
+  flex-direction: column;
+}
+.headear-tittle{
+
+   
+}
+ ul{
+    flex-direction: column;
+}
+ul li{
+    
+}
+ul li a{
+    
+}
+
 
 
     /* responsive for hero section */
@@ -341,6 +441,8 @@ ponsers-imgs
         padding: 15px;
 
     }
+
+
 /* future section */
 .future-section{
     flex-direction: column;
@@ -406,6 +508,34 @@ ponsers-imgs
 
 .box:hover{
     display: none;
+}
+
+
+
+
+
+/* sponsor section */
+
+.sponsers-imgs {
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.sponser-info h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.sponser-info p {
+    font-size: 13px;
+   
+}
+
+/* .about */
+.about-number {
+    font-size: 1.5rem;
 }
 
 
